@@ -1,0 +1,38 @@
+MenuName: "模板菜单"
+Title: "§7§l模板菜单"
+Layout:
+  - "#########"
+  - "#A#B#C#D#"
+  - "#########"
+
+Buttons:
+  '#':
+    name: "§f玻璃板"
+    data: 11
+    material: 'stained_glass_pane'
+    lore:
+      - ""
+  'A':
+    name: "§fA"
+    material: 'stained_glass_pane'
+    data: 12
+    lore:
+      - ""
+  'B':
+    name: "§fB"
+    material: 'stained_glass_pane'
+    data: 13
+    lore:
+      - ""
+  'C':
+    name: "§fC"
+    material: 'stained_glass_pane'
+    data: 14
+    lore:
+      - ""
+  'D':
+    name: "§fD"
+    material: 'stained_glass_pane'
+    data: 15
+    lore:
+      - ""

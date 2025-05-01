@@ -17,5 +17,5 @@ Bukkit构建菜单的便捷工具，帮助你快速开发插件GUI
     <version>1.0.0-20250501.130307-4</version>
   </dependency>
 </dependencies>
-
+```
 ### 实战示例

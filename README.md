@@ -18,5 +18,10 @@ Bukkit构建菜单的便捷工具，帮助你快速开发插件GUI
       </dependency>
 </dependencies>
 ```
+### 代码演示
+使用该工具后你的GUI代码大概是以下格式      
+![image](https://github.com/user-attachments/assets/4b899765-adbe-41dd-a32e-a26b04e72516)
+
+
 ### 实战示例
-![示例插件](https://github.com/NuStarWorld/NuStarGUI-demo/tree/master)
+> 前往 [示例插件](https://github.com/NuStarWorld/NuStarGUI-demo/tree/master)

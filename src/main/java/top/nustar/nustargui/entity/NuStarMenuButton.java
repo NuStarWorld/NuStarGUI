@@ -4,6 +4,7 @@ import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -49,6 +50,12 @@ public class NuStarMenuButton {
         ItemMeta itemMeta = itemStack.getItemMeta();
         itemMeta.setDisplayName(this.name);
         itemMeta.setLore(this.lore);
+        itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES,
+                ItemFlag.HIDE_DESTROYS,
+                ItemFlag.HIDE_ENCHANTS,
+                ItemFlag.HIDE_PLACED_ON,
+                ItemFlag.HIDE_POTION_EFFECTS,
+                ItemFlag.HIDE_UNBREAKABLE);
         itemStack.setItemMeta(itemMeta);
         itemStack.setDurability((short) data);
         return itemStack;

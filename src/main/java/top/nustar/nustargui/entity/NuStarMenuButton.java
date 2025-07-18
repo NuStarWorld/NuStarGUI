@@ -1,5 +1,6 @@
 package top.nustar.nustargui.entity;
 
+import lombok.Getter;
 import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
@@ -11,31 +12,14 @@ import org.bukkit.inventory.meta.ItemMeta;
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@SuppressWarnings("unused")
 public class NuStarMenuButton {
-    public String getName() {
-        return name;
-    }
-
-    public String getMaterial() {
-        return material;
-    }
-
-    public List<String> getLore() {
-        return lore;
-    }
-
-    public int getData() {
-        return data;
-    }
 
     private final String name;
     private final String material;
     private final List<String> lore;
     private final int data;
-
-    public ItemStack getButton() {
-        return button;
-    }
 
     private final ItemStack button;
     public NuStarMenuButton(ConfigurationSection section) {

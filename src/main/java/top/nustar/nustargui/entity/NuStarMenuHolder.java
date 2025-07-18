@@ -1,15 +1,16 @@
 package top.nustar.nustargui.entity;
 
+import lombok.Getter;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.InventoryHolder;
 
+@SuppressWarnings("unused")
 public class NuStarMenuHolder implements InventoryHolder {
     private Inventory inventory;
+    @Getter
     private AbsNuStarGui absNuStarGui;
-    public String getMenuType() {
-        return menuType;
-    }
 
+    @Getter
     private final String menuType;
 
     /**
@@ -34,10 +35,6 @@ public class NuStarMenuHolder implements InventoryHolder {
     }
     public NuStarMenuHolder(String menuType) {
         this.menuType = menuType;
-    }
-
-    public AbsNuStarGui getAbsNuStarGui() {
-        return absNuStarGui;
     }
 
     @Override

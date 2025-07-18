@@ -1,5 +1,6 @@
 package top.nustar.nustargui.entity;
 
+import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
@@ -12,6 +13,8 @@ import java.util.Map;
  * 该类用于创建菜单模板，具体使用要配合AbsNuStarGui使用
  * clone容器对象后进行操作
  */
+@Getter
+@SuppressWarnings("unused")
 public class MenuTemplate {
     private final Inventory inventory;
     private final String menuName;
@@ -24,26 +27,13 @@ public class MenuTemplate {
         this.buttons = buttons;
         this.menuTitle = menuTitle;
     }
-    public String getMenuName() {
-        return menuName;
-    }
 
-    public String getMenuTitle() {
-        return menuTitle;
-    }
-
-    public Map<String, NuStarMenuButton> getButtons() {
-        return buttons;
-    }
     public Inventory cloneInventory() {
         Inventory cloneInv = Bukkit.createInventory(inventory.getHolder(), inventory.getSize(), getMenuName());
         cloneInv.setContents(inventory.getContents());
         return cloneInv;
     }
 
-    public Inventory getInventory() {
-        return inventory;
-    }
     public void open(Player player) {
         player.openInventory(this.inventory);
     }

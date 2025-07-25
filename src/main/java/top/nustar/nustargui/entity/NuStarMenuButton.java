@@ -53,4 +53,12 @@ public class NuStarMenuButton {
         itemStack.setItemMeta(itemMeta);
         return itemStack;
     }
+
+    public ItemStack getButton() {
+        return button.clone();
+    }
+
+    public List<String> getLore() {
+        return new ArrayList<>(lore);
+    }
 }
